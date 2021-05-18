@@ -7,12 +7,12 @@ public class getgroove {
         
         Scanner s = new Scanner(System.in);
         int mood;
-            String[] cryingsolutions = {"Try feeding it", "Change the diaper", "Pick up and walk around", "Take temperature"};
-            String[] fussysolutions = {"Give baby your attention", "Try a nap", "Move or change locations", "Go for a drive", };
-            String[] happysolutions = {"Keep doing what you are doing until your baby's mood changes"};
-            int cryingindex = 0;
-            int fussyindex = 0;
-            int happyindex = 0;
+            String[] popSongs = {"Try feeding it", "Change the diaper", "Pick up and walk around", "Take temperature"};
+            String[] metalSongs = {"Give baby your attention", "Try a nap", "Move or change locations", "Go for a drive", };
+            String[] hippySongs = {"Keep doing what you are doing until your baby's mood changes"};
+            int popindex = 0;
+            int metalindex = 0;
+            int hippyindex = 0;
             String name;
         
         Getgroove() {
@@ -33,10 +33,10 @@ public class getgroove {
             mood = s.nextInt();
             
             if (mood == 1) {               
-                int sz = cryingsolutions.length;
-                if (cryingindex >= sz) cryingindex = 0;
-                System.out.println("I suggest you " + cryingsolutions[cryingindex]);
-                cryingindex++;
+                int sz = popSongs.length;
+                if (popindex >= sz) popindex = 0;
+                System.out.println("I suggest you " + popSongs[popindex]);
+                popindex++;
                 
                 System.out.println("Did that solve the issue? (y/n)");
                 char c = s.next().charAt(0);
@@ -44,10 +44,10 @@ public class getgroove {
                 
             } else if (mood == 2) {
                 
-                int sz = fussysolutions.length;
-                if (fussyindex >= sz) fussyindex = 0;
-                System.out.println("I suggest you " + fussysolutions[fussyindex]);
-                fussyindex++;
+                int sz = metalSongs.length;
+                if (metalindex >= sz) metalindex = 0;
+                System.out.println("I suggest you " + metalSongs[metalindex]);
+                metalindex++;
                 
                 System.out.println("Did that solve the issue? (y/n)");
                 char c = s.next().charAt(0);
