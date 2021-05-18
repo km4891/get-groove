@@ -70,9 +70,9 @@ public class getgroove {
     public static void main(String[] args) {
 
         System.out.println("Name");
-
         Getgroove name1 = new Getgroove();
-        Getgroove name2 = new Getgroove("Suzie");
+        Getgroove name2 = new Getgroove("Fred");
+     
         
         
         
@@ -84,7 +84,7 @@ public class getgroove {
         
         System.out.println("");
         
-        System.out.println("LETS MAKE " + name2.name + " HAPPY");
+        System.out.println("Will you help " + name2.name + " get their groove back?");
         while (name2.getmood() != 3) {
             name2.menu();
         }
