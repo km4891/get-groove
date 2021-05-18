@@ -12,7 +12,11 @@ public class getgroove {
                 "Michael Jackson - Billie Jean (https://www.youtube.com/watch?v=Zi_XLOBDo_Y)", 
                 "Madonna - Get Into The Groove (https://www.youtube.com/watch?v=52iW3lcpK5M)",
                 "*NSYNC - Bye Bye Bye (https://www.youtube.com/watch?v=Eo-KmOd3i7s)"};
-            String[] metalSongs = {"Give baby your attention", "Try a nap", "Move or change locations", "Go for a drive", };
+            String[] metalSongs = {
+                "Limp Bizkit - Break Stuff (https://www.youtube.com/watch?v=ZpUYjpKg9KY)",
+                "Twisted Sister - We're Not Gonna Take It (https://www.youtube.com/watch?v=V9AbeALNVkk)",
+                "Black Sabbath - Iron Man (https://www.youtube.com/watch?v=5s7_WbiR79E)", 
+                "White Zombie - More Human Than Human (https://www.youtube.com/watch?v=E0E0ynyIUsg)", };
             String[] hippySongs = {"Keep doing what you are doing until your baby's mood changes"};
             int popindex = 0;
             int metalindex = 0;
