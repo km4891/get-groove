@@ -60,7 +60,7 @@ public class getgroove {
                 System.out.println("I suggest you " + popSongs[popindex]);
                 popindex++;
                 
-                System.out.println("Did that solve the issue? (y/n)");
+                System.out.println( name + ", are you ready to go to the mall and get the latest Tiger Beat? (y/n)");
                 char c = s.next().charAt(0);
                 if (c == 'y') mood = 3;
                 
@@ -71,10 +71,22 @@ public class getgroove {
                 System.out.println("I suggest you " + metalSongs[metalindex]);
                 metalindex++;
                 
-                System.out.println("Did that solve the issue? (y/n)");
+                System.out.println("Did that get out all your angsty teen anger out? (y/n)");
                 char c = s.next().charAt(0);
-                if (c == 'y') mood = 3;
-            }       
+                if (c == 'y') mood = 5;
+            
+            } else if (mood == 3) {
+
+                int sz = hippySongs.length;
+                if (hippyindex >= sz) hippyindex = 0;
+                System.out.println("Grab your bell bottoms and check this out " + hippySongs[hippyindex]);
+                hippyindex++;
+
+                System.out.println("Are you all groovy now? (y/n)");
+                char c = s.next().charAt(0);
+                if (c == 'y') mood = 5;
+
+            }
             
         }
         
