@@ -7,7 +7,11 @@ public class getgroove {
         
         Scanner s = new Scanner(System.in);
         int mood;
-            String[] popSongs = {"Try feeding it", "Change the diaper", "Pick up and walk around", "Take temperature"};
+            String[] popSongs = {
+                "Britney Spears - Hit Me Baby One More Time (https://www.youtube.com/watch?v=C-u5WLJ9Yk4)",
+                "Michael Jackson - Billie Jean (https://www.youtube.com/watch?v=Zi_XLOBDo_Y)", 
+                "Madonna - Get Into The Groove (https://www.youtube.com/watch?v=52iW3lcpK5M)",
+                "*NSYNC - Bye Bye Bye (https://www.youtube.com/watch?v=Eo-KmOd3i7s)"};
             String[] metalSongs = {"Give baby your attention", "Try a nap", "Move or change locations", "Go for a drive", };
             String[] hippySongs = {"Keep doing what you are doing until your baby's mood changes"};
             int popindex = 0;
@@ -27,7 +31,7 @@ public class getgroove {
             System.out.println("What kind of mood are you in " + name + "?");
             System.out.println("   1. I feel like bubblegum");
             System.out.println("   2. I want to breaking something tonight");
-            System.out.println("   3. I'm crunchy peanut on toast");
+            System.out.println("   3. I'm crunchy peanut butter on toast");
             System.out.println("   4. Let's get transcendental");
        
             mood = s.nextInt();
