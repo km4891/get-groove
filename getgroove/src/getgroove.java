@@ -24,7 +24,7 @@ public class getgroove {
                 "Strawberry Alarm Clock - Peppermints & Incense (https://www.youtube.com/watch?v=4rw1_FNdy-Y)",
                 "Iron Butterfly - In-A-Gadda-Da-Vida (https://www.youtube.com/watch?v=UIVe-rZBcm4)",
                 "Jimi Hendrix - Purple Haze (https://www.youtube.com/watch?v=cJunCsrhJjg)"
-                };
+            };
             String[] loveSongs = {
                 "Marvin Gaye - Let's Get It On (https://www.youtube.com/watch?v=9vAiESu5wrA)",
                 "Barry White - Can't Get Enough Of Your Love Baby (https://www.youtube.com/watch?v=WASXt0bcl6U)",
@@ -47,17 +47,17 @@ public class getgroove {
         
         void menu() {
             System.out.println("What kind of mood are you in " + name + "?");
-            System.out.println("   1. I feel like bubblegum");
-            System.out.println("   2. I want to breaking something tonight");
-            System.out.println("   3. I'm crunchy peanut butter on toast");
-            System.out.println("   4. I'm... uh... you know....");
+            System.out.println("1. I'm feeling very bubblicious");
+            System.out.println("2. I want to breaking something tonight");
+            System.out.println("3. I'm crunchy peanut butter on toast");
+            System.out.println("4. I'm... uh... you know....");
        
             mood = s.nextInt();
             
             if (mood == 1) {               
                 int sz = popSongs.length;
                 if (popindex >= sz) popindex = 0;
-                System.out.println("I suggest you " + popSongs[popindex]);
+                System.out.println("I like Oh My God you should totally listen to this " + popSongs[popindex]);
                 popindex++;
                 
                 System.out.println( name + ", are you ready to go to the mall and get the latest Tiger Beat? (y/n)");
@@ -68,7 +68,7 @@ public class getgroove {
                 
                 int sz = metalSongs.length;
                 if (metalindex >= sz) metalindex = 0;
-                System.out.println("I suggest you " + metalSongs[metalindex]);
+                System.out.println("Ready to kill your ears and crank this to 11 " + metalSongs[metalindex]);
                 metalindex++;
                 
                 System.out.println("Did that get out all your angsty teen anger out? (y/n)");
@@ -79,7 +79,7 @@ public class getgroove {
 
                 int sz = hippySongs.length;
                 if (hippyindex >= sz) hippyindex = 0;
-                System.out.println("Grab your bell bottoms and check this out " + hippySongs[hippyindex]);
+                System.out.println("Turn on, Tune in, Drop out and listen to this " + hippySongs[hippyindex]);
                 hippyindex++;
 
                 System.out.println("Are you all groovy now? (y/n)");
