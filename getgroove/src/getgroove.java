@@ -11,13 +11,20 @@ public class getgroove {
                 "Britney Spears - Hit Me Baby One More Time (https://www.youtube.com/watch?v=C-u5WLJ9Yk4)",
                 "Michael Jackson - Billie Jean (https://www.youtube.com/watch?v=Zi_XLOBDo_Y)", 
                 "Madonna - Get Into The Groove (https://www.youtube.com/watch?v=52iW3lcpK5M)",
-                "*NSYNC - Bye Bye Bye (https://www.youtube.com/watch?v=Eo-KmOd3i7s)"};
+                "*NSYNC - Bye Bye Bye (https://www.youtube.com/watch?v=Eo-KmOd3i7s)"
+            };
             String[] metalSongs = {
                 "Limp Bizkit - Break Stuff (https://www.youtube.com/watch?v=ZpUYjpKg9KY)",
                 "Twisted Sister - We're Not Gonna Take It (https://www.youtube.com/watch?v=V9AbeALNVkk)",
                 "Black Sabbath - Iron Man (https://www.youtube.com/watch?v=5s7_WbiR79E)", 
-                "White Zombie - More Human Than Human (https://www.youtube.com/watch?v=E0E0ynyIUsg)", };
-            String[] hippySongs = {"Keep doing what you are doing until your baby's mood changes"};
+                "White Zombie - More Human Than Human (https://www.youtube.com/watch?v=E0E0ynyIUsg)" 
+            };
+            String[] hippySongs = {
+                "Jefferson Airplane - White Rabbit (https://www.youtube.com/watch?v=WANNqr-vcx0&)",
+                "Strawberry Alarm Clock - Peppermints & Incense (https://www.youtube.com/watch?v=4rw1_FNdy-Y)",
+                "Iron Butterfly - In-A-Gadda-Da-Vida (https://www.youtube.com/watch?v=UIVe-rZBcm4)",
+                "Jimi Hendrix - Purple Haze (https://www.youtube.com/watch?v=cJunCsrhJjg)"
+                };
             int popindex = 0;
             int metalindex = 0;
             int hippyindex = 0;
@@ -36,7 +43,7 @@ public class getgroove {
             System.out.println("   1. I feel like bubblegum");
             System.out.println("   2. I want to breaking something tonight");
             System.out.println("   3. I'm crunchy peanut butter on toast");
-            System.out.println("   4. Let's get transcendental");
+            System.out.println("   4. I'm... uh... you know....");
        
             mood = s.nextInt();
             
