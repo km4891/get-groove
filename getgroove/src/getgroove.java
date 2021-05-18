@@ -25,9 +25,16 @@ public class getgroove {
                 "Iron Butterfly - In-A-Gadda-Da-Vida (https://www.youtube.com/watch?v=UIVe-rZBcm4)",
                 "Jimi Hendrix - Purple Haze (https://www.youtube.com/watch?v=cJunCsrhJjg)"
                 };
+            String[] loveSongs = {
+                "Marvin Gaye - Let's Get It On (https://www.youtube.com/watch?v=9vAiESu5wrA)",
+                "Barry White - Can't Get Enough Of Your Love Baby (https://www.youtube.com/watch?v=WASXt0bcl6U)",
+                "Clarence Carter - Strokin' (https://www.youtube.com/watch?v=P7gMkiOPSeA)",
+                "Salt N Pepa - Push It (https://www.youtube.com/watch?v=vCadcBR95oU)"
+            };
             int popindex = 0;
             int metalindex = 0;
             int hippyindex = 0;
+            int loveindex = 0;
             String name;
         
         Getgroove() {
