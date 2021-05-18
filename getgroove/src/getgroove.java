@@ -24,10 +24,11 @@ public class getgroove {
         }
         
         void menu() {
-            System.out.println("What's wrong with " + name + "?");
-            System.out.println("   1) My baby is crying");
-            System.out.println("   2) My baby is fussy");
-            System.out.println("   3) My baby is happpy");
+            System.out.println("What kind of mood are you in " + name + "?");
+            System.out.println("   1. I feel like bubblegum");
+            System.out.println("   2. I want to breaking something tonight");
+            System.out.println("   3. I'm crunchy peanut on toast");
+            System.out.println("   4. Let's get transcendental");
        
             mood = s.nextInt();
             
