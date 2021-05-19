@@ -51,6 +51,8 @@ public class getgroove {
             System.out.println("2. I want to breaking something tonight");
             System.out.println("3. I'm crunchy peanut butter on toast");
             System.out.println("4. I'm... uh... you know....");
+            System.out.println("5. Oh I'm already getting down with my bad self");
+
        
             mood = s.nextInt();
             
@@ -62,7 +64,7 @@ public class getgroove {
                 
                 System.out.println( name + ", are you ready to go to the mall and get the latest Tiger Beat? (y/n)");
                 char c = s.next().charAt(0);
-                if (c == 'y') mood = 3;
+                if (c == 'y') mood = 5;
                 
             } else if (mood == 2) {
                 
@@ -86,6 +88,19 @@ public class getgroove {
                 char c = s.next().charAt(0);
                 if (c == 'y') mood = 5;
 
+            } else if (mood == 4) {
+
+                int sz = loveSongs.length;
+                if (loveindex >= sz) loveindex = 0;
+                System.out.println("Light some candles and turn this on " + loveSongs[loveindex]);
+                loveindex++;
+
+                System.out.println("Do you need smoke after that? (y/n)");
+                char c = s.next().charAt(0);
+                if (c == 'y') mood = 5;
+           
+            } else if (mood == 5)  {
+                // System.out.println("Glad to see you got your groove thang back");
             }
             
         }
@@ -112,18 +127,18 @@ public class getgroove {
         
         
         System.out.println("Lets help " + name1.name + " get their groove back");
-        while (name1.getmood() != 3) {
+        while (name1.getmood() != 5) {
             name1.menu();
         }
-        System.out.println("Good");
+        System.out.println("Glad I could help you get your goove thing back!");
         
         System.out.println("");
         
         System.out.println("Will you help " + name2.name + " get their groove back?");
-        while (name2.getmood() != 3) {
+        while (name2.getmood() != 5) {
             name2.menu();
         }
-        System.out.println("Good");
+        System.out.println("Look at " + name2.name + " go! That's one jive turkey.");
        
 
     }
