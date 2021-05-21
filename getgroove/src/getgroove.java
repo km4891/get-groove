@@ -31,10 +31,17 @@ public class getgroove {
                 "Clarence Carter - Strokin' (https://www.youtube.com/watch?v=P7gMkiOPSeA)",
                 "Salt N Pepa - Push It (https://www.youtube.com/watch?v=vCadcBR95oU)"
             };
-            int popindex = 0;
-            int metalindex = 0;
-            int hippyindex = 0;
-            int loveindex = 0;
+            
+            // randomizes the solution given
+            Random r = new Random();
+            int low = 1;
+            int high = 4;
+            int popindex = r.nextInt(high - low) + low;
+            int metalindex = r.nextInt(high - low) + low;
+            int hippyindex = r.nextInt(high - low) + low;
+            int loveindex = r.nextInt(high - low) + low;
+           
+            
             String name;
         
         Getgroove() {
@@ -45,6 +52,7 @@ public class getgroove {
             this.name = name;
         }
         
+        // choices menu
         void menu() {
             System.out.println("What kind of mood are you in " + name + "?");
             System.out.println("1. I'm feeling very bubblicious");
@@ -82,6 +90,7 @@ public class getgroove {
                 int sz = hippySongs.length;
                 if (hippyindex >= sz) hippyindex = 0;
                 System.out.println("Turn on, Tune in, Drop out and listen to this " + hippySongs[hippyindex]);
+                System.out.println(hippyindex);
                 hippyindex++;
 
                 System.out.println("Are you all groovy now? (y/n)");
@@ -100,7 +109,7 @@ public class getgroove {
                 if (c == 'y') mood = 5;
            
             } else if (mood == 5)  {
-                // System.out.println("Glad to see you got your groove thang back");
+                
             }
             
         }
@@ -122,6 +131,7 @@ public class getgroove {
         System.out.println("This is the International Man of Mystery, Austin Powers. I'm here to help you get your mojo back. Yeah Baby!");
         System.out.print("So what's you name? ");
         Getgroove name1 = new Getgroove();
+        // creates a new instance
         Getgroove name2 = new Getgroove("Fred");
      
         
@@ -131,7 +141,7 @@ public class getgroove {
         while (name1.getmood() != 5) {
             name1.menu();
         }
-        System.out.println("Glad I could help you get your groove thing back!");
+        System.out.println("Glad I could help you get your groove thang back!");
         
         System.out.println("");
         
