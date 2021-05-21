@@ -119,7 +119,8 @@ public class getgroove {
     
     public static void main(String[] args) {
 
-        System.out.println("Name");
+        System.out.println("This is the International Man of Mystery, Austin Powers. I'm here to help you get your mojo back. Yeah Baby!");
+        System.out.print("So what's you name? ");
         Getgroove name1 = new Getgroove();
         Getgroove name2 = new Getgroove("Fred");
      
@@ -130,7 +131,7 @@ public class getgroove {
         while (name1.getmood() != 5) {
             name1.menu();
         }
-        System.out.println("Glad I could help you get your goove thing back!");
+        System.out.println("Glad I could help you get your groove thing back!");
         
         System.out.println("");
         
